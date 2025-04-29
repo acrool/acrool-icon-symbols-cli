@@ -1,0 +1,98 @@
+{
+  "name": "@acrool/icon-symbols-cli",
+  "version": "0.0.1",
+  "description": "imagemin + sharp Nodejs image processing cli",
+  "keywords": [
+    "typescript",
+    "acrool",
+    "svg-symbols"
+  ],
+  "author": "imagine10255@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acrool/acrool-icon-symbols-cli.git"
+  },
+  "bin": {
+      "acrool-svg-symbols-cli": "dist/bin/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "npm": ">=6",
+    "node": ">=14.5.0"
+  },
+  "scripts": {
+    "build2": "npx tsc",
+    "build": "run-s build:claer && tsc --project ./tsconfig.build.json && run-s copy-dts && run-s chmodBin",
+    "copy-dts": "copyfiles -u 1 \\\"lib/**/*.d.ts\\\" dist",
+    "build:claer": "rm -rf ./dist",
+    "prepublishOnly": "run-s build",
+    "chmodBin": "chmod +x ./dist/bin/cli.js",
+    "test": "jest",
+    "pretest": "run-s build",
+    "lint:fix": "eslint lib/*.ts --fix"
+  },
+  "dependencies": {
+    "@acrool/svg-symbols": "2.0.0",
+    "@types/commander": "^2.12.2",
+    "axios": "^1.9.0",
+    "commander": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "babel-eslint": "^10.0.3",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^8.8.0",
+    "form-data": "^4.0.0",
+    "jest": "^29.5.0",
+    "npm-run-all": "^4.1.5",
+    "ts-jest": "^29.0.5",
+    "ts-node": "10.8.1",
+    "typescript": "4.7.4"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    },
+    "rules": {
+      "quotes": [
+        "warn",
+        "single"
+      ],
+      "semi": [
+        "warn",
+        "always"
+      ],
+      "indent": [
+        "warn",
+        4
+      ],
+      "object-curly-spacing": [
+        "warn",
+        "never"
+      ],
+      "no-useless-escape": "off",
+      "import/no-anonymous-default-export": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "no-mixed-operators": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "@typescript-eslint/no-empty-function": "off"
+    }
+  }
+}
