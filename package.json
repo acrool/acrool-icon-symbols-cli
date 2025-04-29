@@ -1,6 +1,6 @@
 {
   "name": "@acrool/icon-symbols-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Pull acrool icon symbols to project cli",
   "keywords": [
     "typescript",
@@ -14,7 +14,7 @@
     "url": "https://github.com/acrool/acrool-icon-symbols-cli.git"
   },
   "bin": {
-      "acrool-svg-symbols-cli": "dist/bin/cli.js"
+      "acrool-icon-symbols-cli": "dist/bin/cli.js"
   },
   "files": [
     "dist"

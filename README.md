@@ -44,7 +44,7 @@ module.exports = {
 ## Build
 
 ```bash
-yarn build && npx acrool-svg-symbols-cli pull
+yarn build && npx acrool-icon-symbols-cli pull
 ```
 
 ## License
