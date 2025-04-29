@@ -1,6 +1,6 @@
 {
   "name": "@acrool/icon-symbols-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pull acrool icon symbols to project cli",
   "keywords": [
     "typescript",
