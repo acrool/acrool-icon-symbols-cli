@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import {main as pullSymbols} from '../pull';
+import {main as pullSymbols} from '../pull.js';
 import {Command} from 'commander';
 
 const program = new Command();

@@ -41,6 +41,13 @@ module.exports = {
 };
 ```
 
+run pull
+
+```aiignore
+npx acrool-icon-symbols-cli pull
+```
+
+
 ## Build
 
 ```bash
