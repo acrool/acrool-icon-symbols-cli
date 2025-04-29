@@ -1,7 +1,7 @@
 # Acrool Icon Symbols CLI
 
 <p align="center">
-   Pull acrool icon symbols to project
+   Pull acrool icon symbols to project cli
 </p>
 
 <div align="center">

@@ -28,8 +28,8 @@ export async function main(args: IPull) {
             throw new Error('配置文件缺少必要的 token、id 或 path 字段');
         }
 
-        const apiUrl = `http://localhost:8080/api-frontdesk/iconSymbols/pull/${id}`;
-        // const apiUrl = `https://workspace.acrool.com/api/iconSymbols/pull/${id}`;
+        // const apiUrl = `http://localhost:8080/api-frontdesk/iconSymbols/pull/${id}`;
+        const apiUrl = `https://workspace.acrool.com/api/iconSymbols/pull/${id}`;
         // 調用 API 下載 SVG 符號
         const response = await axios.get(apiUrl, {
             headers: {
