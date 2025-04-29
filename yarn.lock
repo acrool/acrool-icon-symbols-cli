@@ -2,18 +2,10 @@
 # yarn lockfile v1
 
 
-"@acrool/js-utils@^3.2.19":
-  version "3.2.19"
-  resolved "https://registry.yarnpkg.com/@acrool/js-utils/-/js-utils-3.2.19.tgz#492026bcbf1a9b300bd1cb6f9e4ab5015d7344ad"
-  integrity sha512-kJ+HXyojpQfGbw/SEOXgyxCdZXEKptE/PmcvAm4+GDymvoKjJ0kROI1iRrUasMLC8N5FZ4jTaF0v7dfK0t4WOQ==
-  dependencies:
-    dayjs "^1.x"
-    decimal.js "^10.x"
-
-"@acrool/svg-symbols@2.0.0":
+"@acrool/icon-symbols@2.0.0":
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@acrool/svg-symbols/-/svg-symbols-2.0.0.tgz#a65a2b417ee770e4045f2e010cc17162cfd6816a"
-  integrity sha512-AJBtRB0gvk4TWP5JwVi/X0wOY6kW+VZ+WrV8l73WfWkYvr9WnXxBybFLLgQ+jNpdkb4oLCNHN93le81/UdaKLA==
+  resolved "https://registry.yarnpkg.com/@acrool/icon-symbols/-/icon-symbols-2.0.0.tgz#d9114b78b66bb4bc0823ddd89e2b4b14498ff1fd"
+  integrity sha512-ola2J7kdKjO5YTCudk9JCQi+hSulZ2e+wxCxgFz2N0sQG5Oo9gp+U2NgE1DXAzMuycnt+5EBlcxC9+Bt42H5qw==
   dependencies:
     "@acrool/js-utils" "^3.2.19"
     fast-xml-parser "^5.2.1"
@@ -21,6 +13,14 @@
     svg-parser "^2.0.4"
     ulid "2.3.0"
     yargs "^17.7.2"
+
+"@acrool/js-utils@^3.2.19":
+  version "3.2.19"
+  resolved "https://registry.yarnpkg.com/@acrool/js-utils/-/js-utils-3.2.19.tgz#492026bcbf1a9b300bd1cb6f9e4ab5015d7344ad"
+  integrity sha512-kJ+HXyojpQfGbw/SEOXgyxCdZXEKptE/PmcvAm4+GDymvoKjJ0kROI1iRrUasMLC8N5FZ4jTaF0v7dfK0t4WOQ==
+  dependencies:
+    dayjs "^1.x"
+    decimal.js "^10.x"
 
 "@ampproject/remapping@^2.1.0", "@ampproject/remapping@^2.2.0":
   version "2.2.0"

@@ -35,8 +35,7 @@
     "lint:fix": "eslint lib/*.ts --fix"
   },
   "dependencies": {
-    "@acrool/svg-symbols": "2.0.0",
-    "@types/commander": "^2.12.2",
+    "@acrool/icon-symbols": "2.0.0",
     "axios": "^1.9.0",
     "commander": "^10.0.0"
   },
@@ -45,6 +44,7 @@
     "@types/node": "18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
+    "@types/commander": "^2.12.2",
     "babel-eslint": "^10.0.3",
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.2",
