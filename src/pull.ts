@@ -1,4 +1,4 @@
-import {logger} from './logger';
+import {logger} from './logger.js';
 import fs from 'fs';
 import path from 'path';
 import axios, { AxiosError } from 'axios';
@@ -21,7 +21,9 @@ export async function main(args: IPull) {
             throw new Error('找不到 .acrool-svg-svg-symbols.cjs 配置文件');
         }
 
-        const config = require(configPath);
+        const configModule = await import(`file://${configPath}`);
+        const config = configModule.default;
+
         const { token, id, path: savePath } = config;
 
         if (!token || !id || !savePath) {
