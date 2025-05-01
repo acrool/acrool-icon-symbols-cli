@@ -1,8 +1,8 @@
 # Acrool Icon Symbols CLI
 
 
-<a href="https://github.com/acrool/acrool-icon-symbols-cli" title="Acrool Icon Symbols CLI - Sync acrool icon symbols to your project with a single command">
-    <img src="https://raw.githubusercontent.com/acrool/acrool-react-img/main/example/public/og.webp" alt="Acrool Icon Symbols CLI"/>
+<a href="https://github.com/acrool/acrool-icon-symbols-cli" title="Acrool Icon Symbols CLI - Fast custom img for Reactjs">
+    <img src="https://raw.githubusercontent.com/acrool/acrool-icon-symbols-cli/refs/heads/main/public/og.png" alt="Acrool Icon Symbols CLI Logo"/>
 </a>
 
 <p align="center">
