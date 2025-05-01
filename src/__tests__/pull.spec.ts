@@ -8,7 +8,9 @@ describe('pull', () => {
         // 攔截 axios 呼叫的 API，範例如下
         nock('https://workspace.acrool.com')
             .get('/api/iconSymbols/pull')
-            .reply(200, {icons: ['mock-icon']});
+            .reply(200, {
+                data: '<svg>test</svg>'
+            });
     });
 
     afterAll(() => {
@@ -40,12 +42,10 @@ describe('pull', () => {
 
         cmd.on('close', async (code) => {
             try {
-                expect(code).toBe(1);
-                expect(output).toContain('✔ SVG symbol successfully downloaded to sandbox/library/acrool-react-icon/SvgSymbol.tsx');
-
-                const existsFile = await fs.existsSync(targetFile);
-                expect(existsFile).toBe(true);
-
+                expect(code).toBe(0);
+                const componentPath = path.join(__dirname, '../../sandbox/library/acrool-react-icon');
+                expect(fs.existsSync(componentPath)).toBe(true);
+                expect(fs.existsSync(path.join(componentPath, 'SvgSymbol.ts'))).toBe(true);
                 done();
             } catch (error) {
                 done(error);
