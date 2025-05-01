@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
-import {main as pullSymbols} from '../pull.js';
 import {Command} from 'commander';
+
+import {main as pullSymbols} from '../pull.js';
 
 const program = new Command();
 
 program
-    .version("1.0.0")
+    .version('1.0.0')
     .command('pull')
     .option('-t, --saveFile <path>', 'Target file path')
     .action(pullSymbols);

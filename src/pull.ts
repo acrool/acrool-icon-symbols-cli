@@ -1,7 +1,8 @@
-import {logger} from './logger.js';
+import axios, {AxiosError} from 'axios';
 import fs from 'fs';
 import path from 'path';
-import axios, { AxiosError } from 'axios';
+
+import {logger} from './logger.js';
 import {
     IPull
 } from './types';
@@ -24,7 +25,7 @@ export async function main(args: IPull) {
         const configModule = await import(`file://${configPath}`);
         const config = configModule.default;
 
-        const { token, id, path: savePath } = config;
+        const {token, id, path: savePath} = config;
 
         if (!token || !id || !savePath) {
             throw new Error('配置文件缺少必要的 token、id 或 path 字段');
@@ -49,13 +50,13 @@ export async function main(args: IPull) {
                     // 請求配置出錯
                     throw new Error(`請求配置錯誤: ${error}`);
                 }
-        });
+            });
 
 
         // 確保目標目錄存在
         const dir = path.dirname(savePath);
         if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
+            fs.mkdirSync(dir, {recursive: true});
         }
 
         // 保存下載的內容

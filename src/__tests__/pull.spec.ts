@@ -1,6 +1,6 @@
 import {spawn} from 'child_process';
-import path from 'path';
 import fs from 'fs';
+import path from 'path';
 
 describe('pull', () => {
     const cli = path.join(__dirname, '../../dist/bin/cli.js');
@@ -29,7 +29,7 @@ describe('pull', () => {
         cmd.on('close', async (code) => {
             try {
                 expect(code).toBe(0);
-                expect(output).toContain(`✔ SVG 符號已成功下載到 src/library/acrool-react-icon/SvgSymbol.tsx`);
+                expect(output).toContain('✔ SVG 符號已成功下載到 src/library/acrool-react-icon/SvgSymbol.tsx');
 
                 const existsFile = await fs.existsSync(targetFile);
                 expect(existsFile).toBe(true);
