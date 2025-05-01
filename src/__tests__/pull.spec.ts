@@ -7,9 +7,9 @@ describe('pull', () => {
     beforeAll(() => {
         // 攔截 axios 呼叫的 API，範例如下
         nock('https://workspace.acrool.com')
-            .get('/api/iconSymbols/pull')
+            .get('/api/iconSymbols/pull/01js17m')
             .reply(200, {
-                data: '<svg>test</svg>'
+                data: '<svg xmlns="http://www.w3.org/2000/svg" style={{height:0, width:0, display: \'block\'}}></svg>'
             });
     });
 
@@ -45,7 +45,7 @@ describe('pull', () => {
                 expect(code).toBe(0);
                 const componentPath = path.join(__dirname, '../../sandbox/library/acrool-react-icon');
                 expect(fs.existsSync(componentPath)).toBe(true);
-                expect(fs.existsSync(path.join(componentPath, 'SvgSymbol.ts'))).toBe(true);
+                expect(fs.existsSync(path.join(componentPath, 'SvgSymbol.tsx'))).toBe(true);
                 done();
             } catch (error) {
                 done(error);
