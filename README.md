@@ -1,6 +1,6 @@
 # Acrool Icon Symbols CLI
 
-<img src="https://raw.githubusercontent.com/acrool/acrool-icon-symbols-cli/main/public/og.webp" alt="Acrool Icon Symbols CLI Logo"/>
+<img src="https://raw.githubusercontent.com/acrool/acrool-icon-symbols-cli/main/public/og.png" alt="Acrool Icon Symbols CLI Logo"/>
 
 <p align="center">
    Sync acrool icon symbols to your project with a single command.
