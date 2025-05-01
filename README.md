@@ -73,8 +73,8 @@ fast run
 ```bash
 yarn icon:pull
 
-# ✔ The component has been successfully generated to ./src/components/atoms/TitleName
-# ✨  Done in 0.12s.
+# ✨  Done in 2.73s.
+# ✔ SVG symbol successfully downloaded to sandbox/library/acrool-react-icon/SvgSymbol.tsx
 ```
 
 
