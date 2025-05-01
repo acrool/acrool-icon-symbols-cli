@@ -2,7 +2,7 @@
 
 
 <a href="https://github.com/acrool/acrool-icon-symbols-cli" title="Acrool Icon Symbols CLI - Fast custom img for Reactjs">
-    <img src="https://raw.githubusercontent.com/acrool/acrool-icon-symbols-cli/refs/heads/main/public/og.png" alt="Acrool Icon Symbols CLI Logo"/>
+    <img src="https://raw.githubusercontent.com/acrool/acrool-icon-symbols-cli/main/public/og.png" alt="Acrool Icon Symbols CLI Logo"/>
 </a>
 
 <p align="center">
@@ -44,23 +44,39 @@ module.exports = {
 };
 ```
 
+<img src="https://raw.githubusercontent.com/acrool/acrool-icon-symbols-cli/main/public/setting.png" alt="Acrool setting"/>
+
+
+
+
 run pull
 
-```aiignore
-npx acrool-icon-symbols-cli pull
+```bash
+npx acrool-icon-symbols pull
 ```
 
+--- 
 
+Here is a faster way
 your can add in your package.json
 
 ```json
 {
   "scripts": {
     "dev": "next dev",
-    "icon:pull": "acrool-icon-symbols-cli pull"
+    "icon:pull": "acrool-icon-symbols pull"
   }
 }
 ```
+fast run
+
+```bash
+yarn icon:pull
+
+# ✔ The component has been successfully generated to ./src/components/atoms/TitleName
+# ✨  Done in 0.12s.
+```
+
 
 
 ## Build
