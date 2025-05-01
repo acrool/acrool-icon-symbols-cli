@@ -1,5 +1,5 @@
 module.exports = {
-    token: 'imagine',
-    id: '01jdp3e3epvzr9gmt2df8x1r7v',
-    path: 'src/library/acrool-react-icon/SvgSymbol.tsx',
+    token: 'uimofa-academy',
+    id: '01js17m4j2zzht24pyg1qmc3hs',
+    path: 'sandbox/library/acrool-react-icon/SvgSymbol.tsx',
 };

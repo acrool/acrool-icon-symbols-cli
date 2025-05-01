@@ -79,10 +79,12 @@ yarn icon:pull
 
 
 
-## Build
+## Develop
+
+build
 
 ```bash
-yarn build && npx acrool-icon-symbols-cli pull
+yarn build && npx acrool-icon-symbols pull
 ```
 
 ## License

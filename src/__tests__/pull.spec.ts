@@ -4,7 +4,7 @@ import path from 'path';
 
 describe('pull', () => {
     const cli = path.join(__dirname, '../../dist/bin/cli.js');
-    const targetFile = path.join(__dirname, '../../src/library/acrool-react-icon/SvgSymbol.tsx');
+    const targetFile = path.join(__dirname, '../../sandbox/library/acrool-react-icon/SvgSymbol.tsx');
 
     const timeout = 30 * 1000;
     afterAll(async () => {
@@ -29,7 +29,7 @@ describe('pull', () => {
         cmd.on('close', async (code) => {
             try {
                 expect(code).toBe(0);
-                expect(output).toContain('✔ SVG 符號已成功下載到 src/library/acrool-react-icon/SvgSymbol.tsx');
+                expect(output).toContain('✔ SVG symbol successfully downloaded to sandbox/library/acrool-react-icon/SvgSymbol.tsx');
 
                 const existsFile = await fs.existsSync(targetFile);
                 expect(existsFile).toBe(true);
