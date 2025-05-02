@@ -29,7 +29,7 @@
 ## Install
 
 ```bash
-yarn add @acrool/icon-symbols-cli
+yarn add -D @acrool/icon-symbols-cli
 ```
 
 ## Use
