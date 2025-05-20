@@ -19,7 +19,7 @@ export async function main(args: IPull) {
         // 讀取配置文件
         const configPath = path.join(process.cwd(), '.acrool-svg-symbols.cjs');
         if (!fs.existsSync(configPath)) {
-            throw new Error('.acrool-svg-svg-symbols.cjs configuration file not found');
+            throw new Error('.acrool-svg-symbols.cjs configuration file not found');
         }
 
         const configModule = await import(`file://${configPath}`);
