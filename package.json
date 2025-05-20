@@ -15,7 +15,7 @@
     "url": "https://github.com/acrool/acrool-icon-symbols-cli.git"
   },
   "bin": {
-    "acrool-icon-symbols": "dist/bin/cli.js"
+    "acrool-icon-symbols-cli": "dist/bin/cli.js"
   },
   "files": [
     "dist"

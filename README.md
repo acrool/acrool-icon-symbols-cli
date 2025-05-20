@@ -64,7 +64,7 @@ your can add in your package.json
 {
   "scripts": {
     "dev": "next dev",
-    "icon:pull": "acrool-icon-symbols pull"
+    "icon:pull": "acrool-icon-symbols-cli pull"
   }
 }
 ```
@@ -79,12 +79,12 @@ yarn icon:pull
 
 
 
-## Develop
+## Develop test
 
 build
 
 ```bash
-yarn build && npx acrool-icon-symbols pull
+yarn build && npx acrool-icon-symbols-cli pull
 ```
 
 ## License
