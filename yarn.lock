@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@acrool/icon-symbols@2.0.2-alpha.2":
-  version "2.0.2-alpha.2"
-  resolved "https://registry.yarnpkg.com/@acrool/icon-symbols/-/icon-symbols-2.0.2-alpha.2.tgz#5f1a522e35736af8be0b3f99dbb97651d59ede5d"
-  integrity sha512-5JFEwYl9er0qVBXuEF+mIgUQqKYLqUOCj3nLG/E4chsi0gYaBi0KTyz98V7sfpMqDOip4SIgWij1EBdwnhsxOQ==
+"@acrool/icon-symbols@2.0.2-alpha.3":
+  version "2.0.2-alpha.3"
+  resolved "https://registry.yarnpkg.com/@acrool/icon-symbols/-/icon-symbols-2.0.2-alpha.3.tgz#878f2bae6fa52f854a1ed3819c7b1c59bd5fe3e1"
+  integrity sha512-XivCGD32Y4raXxEDwqYgscz0CyP4LwihU8/p6ZnV1kTHP9Ryg/7Y6/FFT85eop5+Ddm1ej4lpvBDwLM6C5CZAw==
   dependencies:
     "@acrool/js-utils" "^3.2.25"
     fast-xml-parser "^5.2.1"
