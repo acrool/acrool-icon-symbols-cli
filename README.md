@@ -34,7 +34,7 @@ yarn add -D @acrool/icon-symbols-cli
 
 ## Use
 
-add to project root `.acrool-svg-symbols`
+add to project root `.acrool-icon-symbols`
 
 ```ts
 module.exports = {
