@@ -25,14 +25,15 @@ export async function main(args: IPull) {
         const configModule = await import(`file://${configPath}`);
         const config = configModule.default;
 
-        const {token, id, path: savePath} = config;
+        const {token, id, path: savePath, type} = config;
 
         if (!token || !id || !savePath) {
             throw new Error('The configuration file is missing the required `token`, `id` or `path` fields');
         }
+        const fileType = type === 'angular' ? 'angular' : 'react';
 
         // const apiUrl = `http://localhost:8080/api-frontdesk/iconSymbols/pull/${id}`;
-        const apiUrl = `https://workspace.acrool.com/api/iconSymbols/pull/${id}`;
+        const apiUrl = `https://workspace.acrool.com/api/iconSymbols/pull/${id}?type=${fileType}`;
         // 調用 API 下載 SVG 符號
         const response = await axios.get(apiUrl, {
             headers: {
