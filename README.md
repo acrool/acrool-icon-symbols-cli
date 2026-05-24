@@ -34,15 +34,21 @@ yarn add -D @acrool/icon-symbols-cli
 
 ## Use
 
-add to project root `.acrool-icon-symbols`
+add to project root `.acrool-icon-symbols.cjs`
 
 ```ts
 module.exports = {
     token: 'im',
     id: 'xxxx',
     path: 'src/library/acrool-react-icon/SvgSymbol.tsx',
+    type: 'react',
 };
 ```
+
+- `token`: Icon Symbols token
+- `id`: Icon Symbols project id
+- `path`: Output file path
+- `type`: Output type, supports `react`, `svg`, `angular`, `flutter`, defaults to `react`
 
 <img src="https://raw.githubusercontent.com/acrool/acrool-icon-symbols-cli/main/public/setting.png" alt="Acrool setting"/>
 
