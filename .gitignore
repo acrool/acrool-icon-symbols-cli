@@ -22,3 +22,12 @@ yarn-debug.log*
 yarn-error.log*
 .idea
 
+
+
+# Yarn 4 ignore
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
