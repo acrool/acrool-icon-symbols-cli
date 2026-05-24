@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0-alpha.1](https://github.com/acrool/acrool-icon-symbols-cli/compare/v2.1.0-alpha.0...v2.1.0-alpha.1) (2026-05-24)
+
+
+### Features
+
+* 將 API 請求從 GET 改為 POST 並驗證 token ([9fabdd5](https://github.com/acrool/acrool-icon-symbols-cli/commit/9fabdd5f081b0c6b7c0ffc2a87d115935584441c))
+
 ## [2.1.0-alpha.0](https://github.com/acrool/acrool-icon-symbols-cli/compare/v2.0.2...v2.1.0-alpha.0) (2026-05-24)
 
 
