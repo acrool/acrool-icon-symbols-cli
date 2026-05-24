@@ -54,10 +54,7 @@ export async function pullSymbols(config: IIconSymbolsConfig, host: string = API
     const apiUrl = buildPullUrl(id, type, host);
 
     // 調用 API 下載 SVG 符號
-    const response = await axios.get(apiUrl, {
-        headers: {
-            'icon-symbols-token': token,
-        },
+    const response = await axios.post(apiUrl, {token}, {
         responseType: 'text',
     })
         .catch((error: AxiosError<IResponseError>) => {

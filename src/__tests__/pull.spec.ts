@@ -27,9 +27,21 @@ describe('pull', () => {
 
     it('should download svg symbols', async () => {
         const server: Server = createServer((req, res) => {
-            if (req.method === 'GET' && req.url && req.url.startsWith('/api/icon-symbols/01js17m/pull')) {
-                res.writeHead(200, {'content-type': 'text/plain'});
-                res.end(svgBody);
+            if (req.method === 'POST' && req.url && req.url.startsWith('/api/icon-symbols/01js17m/pull')) {
+                let body = '';
+                req.on('data', chunk => {
+                    body += chunk;
+                });
+                req.on('end', () => {
+                    if (JSON.parse(body).token !== 'uimofa-academy') {
+                        res.writeHead(403, {'content-type': 'text/plain'});
+                        res.end('Unauthorized');
+                        return;
+                    }
+
+                    res.writeHead(200, {'content-type': 'text/plain'});
+                    res.end(svgBody);
+                });
                 return;
             }
             res.writeHead(404, {'content-type': 'text/plain'});
